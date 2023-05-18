@@ -12,6 +12,7 @@ const BotonNuevoVideo = () => {
     font-size:26px;
     text-align:center;
     border:2px solid #e0e0e0;
+    
 
     @media screen and (max-width: 608px) {
         width:100%;

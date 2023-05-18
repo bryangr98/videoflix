@@ -13,8 +13,7 @@ const Banner = () => {
         `
 
     return (
-        <BannerStyle>
-        </BannerStyle>
+        <BannerStyle/>
     )
 }
 

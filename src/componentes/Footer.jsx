@@ -12,7 +12,7 @@ const Footer = () => {
     background-color: #565656;
     justify-content:center;
     align-items: center;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
     color: white;
     `
