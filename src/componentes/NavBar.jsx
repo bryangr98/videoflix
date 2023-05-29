@@ -1,8 +1,9 @@
 import React  from "react";
-import BotonNuevoVideo from "./Boton";
+import BotonNuevoVideo from "./BotonNuevoVideo";
 import styled from 'styled-components'
 import videoflix from "../images/videoflix.png"
-import { Link } from "react-router-dom";
+import { useContext } from "react";
+import BotonTema from "./BotonTema";
 
 
 const NavBar = () => {
@@ -18,12 +19,21 @@ const NavBar = () => {
     width: 250px;
     height: 100px;`
 
+    const Boton = styled.button`
+    background-color: #056;
+    `
+
+    const GoToHome = ()=>{
+        window.location.href = "/"
+    }
+
     return(
         <MyDiv>
 
-        <ImgHome src={videoflix} alt="logo" />
+        <ImgHome src={videoflix} alt="logo" onClick={GoToHome}/>
         
         <BotonNuevoVideo/>
+        <BotonTema/>
         </MyDiv>
     )
 

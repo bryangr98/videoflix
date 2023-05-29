@@ -12,20 +12,21 @@ const BotonNuevoVideo = () => {
     font-size:26px;
     text-align:center;
     border:2px solid #e0e0e0;
-    
-
     @media screen and (max-width: 608px) {
         width:100%;
         position:absolute;
         bottom:5%;
         min-width:200px;
-        
     }
     `
 
+    const GoNuevoVideo = () => {
+        window.location.href = 'http://localhost:3000/NuevoVideo';
+    }
+
     return  (
         <>
-        <Mybutton>
+        <Mybutton onClick={GoNuevoVideo}>
             Nuevo Video
         </Mybutton>
         

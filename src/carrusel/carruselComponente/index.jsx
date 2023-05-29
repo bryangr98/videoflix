@@ -2,13 +2,13 @@ import React from "react";
 import VideoSlider from "../slider";
 
 
-const Carrusel = ({videos})=>{
+const Carrusel = ()=>{
 
 
 
 
 return <div>
-    <VideoSlider videos={videos} />
+    <VideoSlider />
     </div>
 }
 
