@@ -1,18 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Slider from 'react-slick';
 import VideoCard from '../videoCard';
 import { useVideoContext } from '../../Context';
 import styled from 'styled-components';
+import { ThemeContext } from '../../ThemeContext';
+
 
 const VideoSlider = () => {
-
-  const MyH3 = styled.h3`
-    height: 100px;
-    font-size: 1.8em;
-    color: #000;
-    width: 100%;
-    text-align: center;
-  `
+  const {theme,MyH2,MyH3}= useContext(ThemeContext);
 
   const videosByCategory = useVideoContext();
   const categories = Object.entries(videosByCategory);
@@ -32,17 +27,18 @@ const cat = Object.entries(valorIndex0);
   return (
     console.log('videos',cat),
     <div>
-      {cat.length > 1  && cat.map(([categoryName, videos]) => (
+      { cat.map(([categoryName, videos]) => (
+
   <div key={categoryName}>
-    <h2>{categoryName}</h2>
-    {videos.length > 0 ? (
+    <MyH2 theme={theme}>{categoryName}</MyH2>
+    {videos.length > 1 ? (
       <Slider {...settings}>
         {videos.map((video) => (
           <VideoCard key={video.id} video={video} imgVideo={video.imgVideo} />
         ))}
       </Slider>
     ) : (
-      <MyH3>No hay videos</MyH3>
+      <></>
     )}
   </div>
 )) }

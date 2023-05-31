@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styled  from 'styled-components';
+import {BrowserRouter,Link} from 'react-router-dom';
+import { ThemeContext } from '../../src/ThemeContext';
+import { Button } from '@mui/material';
 
-const BotonNuevoVideo = () => {
-
-    const Mybutton = styled.div`
+    const MyDiv = styled.div`
+    cursor: pointer;
     width:181px;
     height:54px;
     border-radius:4px;
@@ -11,29 +13,41 @@ const BotonNuevoVideo = () => {
     background-color:#555;
     font-size:26px;
     text-align:center;
-    border:2px solid #e0e0e0;
+    border:none;
     @media screen and (max-width: 608px) {
         width:100%;
         position:absolute;
-        bottom:5%;
+        top:40px;
+        left: 30%;
         min-width:200px;
+        display:flex;
+        flex-direction: column;
+        background-color: transparent;
+        border:none;
+        color:white;
     }
     `
+   
+  
+const BotonNuevoVideo = () => {
+    const {theme,MyStyledButton}=useContext(ThemeContext);
 
-    const GoNuevoVideo = () => {
-        window.location.href = 'http://localhost:3000/NuevoVideo';
-    }
 
-    return  (
-        <>
-        <Mybutton onClick={GoNuevoVideo}>
-            Nuevo Video
-        </Mybutton>
+    return (
         
-        
-        </>
-        )
+        <MyDiv theme={theme} >
 
-}
+          <Link to={'/nuevoVideo'}>
+            <MyStyledButton theme={theme} type="button" >Nuevo Video</MyStyledButton>
+          </Link>
+
+          <Link to={'/nuevaCategoria'}>
+            <MyStyledButton  theme={theme} type="button">Agregar Categoría</MyStyledButton>
+          </Link>
+          
+        </MyDiv>
+        
+      );
+    };
 
 export default BotonNuevoVideo;

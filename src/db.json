@@ -1,5 +1,5 @@
 {
-  
+  "videosData": {
     "frontend": [
       {
         "id": 1,
@@ -47,43 +47,43 @@
     "backend": [
       {
         "id": 1,
-        "title": "VideoBackEnd 1",
+        "title": "BackEnd 1",
         "url": "https:www.youtube.com/watch?v=dQw4w9WgXcQ",
         "imgVideo": "https://i.ytimg.com/vi/aDhrEm-3kYY/mqdefault.jpg"
       },
       {
         "id": 2,
-        "title": "VideoBackEnd 2",
+        "title": "BackEnd 2",
         "url": "https:www.youtube.com/watch?v=dQw4w9WgXcQ",
         "imgVideo": "https://i.ytimg.com/vi/aDhrEm-3kYY/mqdefault.jpg"
       },
       {
         "id": 3,
-        "title": "VideoBackEnd 3",
+        "title": "BackEnd 3",
         "url": "https:www.youtube.com/watch?v=dQw4w9WgXcQ",
         "imgVideo": "https://i.ytimg.com/vi/aDhrEm-3kYY/mqdefault.jpg"
       },
       {
         "id": 4,
-        "title": "VideoBackEnd 4",
+        "title": "BackEnd 4",
         "url": "https:www.youtube.com/watch?v=dQw4w9WgXcQ",
         "imgVideo": "https://i.ytimg.com/vi/aDhrEm-3kYY/mqdefault.jpg"
       },
       {
         "id": 5,
-        "title": "VideoBackEnd 5",
+        "title": "BackEnd 5",
         "url": "https:www.youtube.com/watch?v=dQw4w9WgXcQ",
         "imgVideo": "https://i.ytimg.com/vi/aDhrEm-3kYY/mqdefault.jpg"
       },
       {
         "id": 6,
-        "title": "VideoBackEnd 6",
+        "title": "BackEnd 6",
         "url": "https:www.youtube.com/watch?v=dQw4w9WgXcQ",
         "imgVideo": "https://i.ytimg.com/vi/aDhrEm-3kYY/mqdefault.jpg"
       },
       {
         "id": 7,
-        "title": "VideoBackEnd 7",
+        "title": "BackEnd 7",
         "url": "https:www.youtube.com/watch?v=dQw4w9WgXcQ",
         "imgVideo": "https://i.ytimg.com/vi/aDhrEm-3kYY/mqdefault.jpg"
       }
@@ -132,6 +132,25 @@
         "imgVideo": "https://i.ytimg.com/vi/aDhrEm-3kYY/mqdefault.jpg"
       }
     ],
-    "devOps": []
-  
+    "Marketing": [
+      {
+        "id": 1,
+        "title": "mark",
+        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "imgVideo": "https://play-lh.googleusercontent.com/1-hPxafOxdYpYZEOKzNIkSP43HXCNftVJVttoo4ucl7rsMASXW3Xr6GlXURCubE1tA=w3840-h2160-rw"
+      },
+      {
+        "id": 2,
+        "title": "mar2",
+        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "imgVideo": "https://play-lh.googleusercontent.com/1-hPxafOxdYpYZEOKzNIkSP43HXCNftVJVttoo4ucl7rsMASXW3Xr6GlXURCubE1tA=w3840-h2160-rw"
+      },
+      {
+        "id": 3,
+        "title": "como vender",
+        "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "imgVideo": "https://play-lh.googleusercontent.com/1-hPxafOxdYpYZEOKzNIkSP43HXCNftVJVttoo4ucl7rsMASXW3Xr6GlXURCubE1tA=w3840-h2160-rw"
+      }
+    ]
+  }
 }

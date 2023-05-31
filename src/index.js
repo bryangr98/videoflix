@@ -4,16 +4,17 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {VideoProvider} from './Context.js';
-
+import { ThemeProvider } from './ThemeContext';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <ThemeProvider>
     <VideoProvider>
     <App />
     </VideoProvider>
-
+    </ThemeProvider>
   </React.StrictMode>
 );
 

@@ -11,6 +11,8 @@ const BotonTema = () => {
   background-color: ${theme === 'light' ? '#3c9db1' : '#1b1b61'};
   color: ${theme === 'light' ? 'black' : 'white'};
   font-weight: bold;
+  margin-right: 20px;
+  cursor: pointer;
   `
 
   return (

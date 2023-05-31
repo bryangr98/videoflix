@@ -2,10 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import aluraflix from '../images/aluraflix.svg'
 
-
-const Footer = () => {
-
-    const Footer = styled.div`
+    const FooterStyle = styled.div`
     display: flex;	
     height: 150px;
     width: 100%;
@@ -22,11 +19,14 @@ const Footer = () => {
     width: 35vw;
     `
 
+const Footer = () => {
+
+
     return (
-        <Footer>
+        <FooterStyle>
             <h3>From</h3>
             <ImgFooter src={aluraflix} alt="logo" />
-        </Footer>
+        </FooterStyle>
     )
 }
 

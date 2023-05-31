@@ -2,18 +2,17 @@ import React  from "react";
 import BotonNuevoVideo from "./BotonNuevoVideo";
 import styled from 'styled-components'
 import videoflix from "../images/videoflix.png"
-import { useContext } from "react";
 import BotonTema from "./BotonTema";
+import { Link } from "react-router-dom";
 
 
-const NavBar = () => {
+const NavBar = (ruta) => {
 
     const MyDiv = styled.div`
     display: flex;
     width: 100%;
     justify-content: space-between;
     background-color: #565656;
-    padding: 10px;
     `
     const ImgHome = styled.img`
     width: 250px;
@@ -23,16 +22,15 @@ const NavBar = () => {
     background-color: #056;
     `
 
-    const GoToHome = ()=>{
-        window.location.href = "/"
-    }
+   
 
     return(
         <MyDiv>
 
-        <ImgHome src={videoflix} alt="logo" onClick={GoToHome}/>
-        
-        <BotonNuevoVideo/>
+        <Link to="/">
+        <ImgHome src={videoflix} alt="logo"/>
+        </Link>        
+        <BotonNuevoVideo ruta={ruta}/>
         <BotonTema/>
         </MyDiv>
     )
